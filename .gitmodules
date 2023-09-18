@@ -1,0 +1,9 @@
+[submodule "assignment1"]
+	path = assignment01
+	url = git@github.com:esbendamkjaer/CSE-PA-ASSIGNMENT01.git
+[submodule "examples"]
+	path = examples
+	url = git@gitlab.gbar.dtu.dk:chrg/course-02242-examples.git
+[submodule "assignment02/libs/tree-sitter-java"]
+	path = assignment02/libs/tree-sitter-java
+	url = git@github.com:tree-sitter/tree-sitter-java.git
