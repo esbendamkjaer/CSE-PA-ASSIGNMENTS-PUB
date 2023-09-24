@@ -1,28 +1,120 @@
 digraph {
-	"dtu/deps/normal/Primes$PrimesIterator" [label=<
+	"me/Delocaz/HelperBot/HelpCommand$Type" [label=<
 <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-    <tr><td>dtu/deps/normal/Primes$PrimesIterator</td></tr>
-    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">- current: int</td></tr><tr><td align="left">~ this$0: Primes</td></tr></table></td></tr>
-    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ next(String): Integer</td></tr><tr><td align="left">+ next(String): Object</td></tr><tr><td align="left">+ &lt;init&gt;(String): void</td></tr><tr><td align="left">+ hasNext(String): boolean</td></tr></table></td></tr>
+    <tr><td>me/Delocaz/HelperBot/HelpCommand$Type</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ TEXT: HelpCommand</td></tr><tr><td align="left">- ENUM$VALUES: None</td></tr><tr><td align="left">+ URL: HelpCommand</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ values(String, String, String): void</td></tr><tr><td align="left">+ valueOf(String, String, String): HelpCommand</td></tr><tr><td align="left">- &lt;init&gt;(String, String, String): void</td></tr><tr><td align="left">~ &lt;clinit&gt;(String, String, String): void</td></tr></table></td></tr>
 </table>> shape=plain]
-	"dtu/deps/normal/Primes" [label=<
+	"me/Delocaz/HelperBot/DelHelpCommand" [label=<
 <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-    <tr><td>dtu/deps/normal/Primes</td></tr>
-    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">- primes: List</td></tr></table></td></tr>
-    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ &lt;init&gt;(String): void</td></tr><tr><td align="left">+ iterator(String): Iterator</td></tr><tr><td align="left">+ main(String): void</td></tr></table></td></tr>
+    <tr><td>me/Delocaz/HelperBot/DelHelpCommand</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">~ hb: HelperBot</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ onCommand(String, String, String): boolean</td></tr><tr><td align="left">+ &lt;init&gt;(String, String, String): void</td></tr></table></td></tr>
 </table>> shape=plain]
-	"dtu/deps/normal/Primes$PrimesIterator" -> "java/util/List" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "java/util/List" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "java/util/ArrayList" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes$PrimesIterator" -> "java/lang/Integer" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "java/util/Iterator" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes$PrimesIterator" -> "dtu/deps/normal/Primes$PrimesIterator" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "java/io/PrintStream" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes$PrimesIterator" -> "dtu/deps/normal/Primes" [label=composition arrowhead=diamond style=solid]
-	"dtu/deps/normal/Primes" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "java/lang/Integer" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "dtu/deps/normal/Primes$PrimesIterator" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "dtu/deps/normal/Primes" [label=uses arrowhead=vee style=dashed]
-	"dtu/deps/normal/Primes" -> "java/lang/Iterable" [label=realization arrowhead=onormal style=dashed]
-	"dtu/deps/normal/Primes$PrimesIterator" -> "java/util/Iterator" [label=realization arrowhead=onormal style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" [label=<
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr><td>me/Delocaz/HelperBot/HelperBot</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ cf: ConfigFile</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ &lt;init&gt;(String, String, String): void</td></tr><tr><td align="left">+ disable(String, String, String): void</td></tr><tr><td align="left">+ onDisable(String, String, String): void</td></tr><tr><td align="left">+ onEnable(String, String, String): void</td></tr></table></td></tr>
+</table>> shape=plain]
+	"me/Delocaz/HelperBot/AddHelpCommand" [label=<
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr><td>me/Delocaz/HelperBot/AddHelpCommand</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">~ hb: HelperBot</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ onCommand(String, String, String): boolean</td></tr><tr><td align="left">+ &lt;init&gt;(String, String, String): void</td></tr></table></td></tr>
+</table>> shape=plain]
+	"me/Delocaz/HelperBot/ConfigFile$versions" [label=<
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr><td>me/Delocaz/HelperBot/ConfigFile$versions</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">- ENUM$VALUES: None</td></tr><tr><td align="left">~ current: ConfigFile</td></tr><tr><td align="left">+ HB2_1: ConfigFile</td></tr><tr><td align="left">+ HB2_0: ConfigFile</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ values(String, String, String): void</td></tr><tr><td align="left">- &lt;init&gt;(String, String, String): void</td></tr><tr><td align="left">~ &lt;clinit&gt;(String, String, String): void</td></tr><tr><td align="left">+ getVersion(String, String, String): ConfigFile</td></tr><tr><td align="left">+ valueOf(String, String, String): ConfigFile</td></tr><tr><td align="left">+ isCurrent(String, String, String): boolean</td></tr></table></td></tr>
+</table>> shape=plain]
+	"me/Delocaz/HelperBot/ConfigFile" [label=<
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr><td>me/Delocaz/HelperBot/ConfigFile</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">~ hb: HelperBot</td></tr><tr><td align="left">- $SWITCH_TABLE$me$Delocaz$HelperBot$ConfigFile$versions: None</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ init(String, String, String): void</td></tr><tr><td align="left">+ convert(String, String, String): void</td></tr><tr><td align="left">+ get(String, String, String): String</td></tr><tr><td align="left">~ $SWITCH_TABLE$me$Delocaz$HelperBot$ConfigFile$versions(String, String, String): void</td></tr><tr><td align="left">+ reload(String, String, String): void</td></tr><tr><td align="left">+ &lt;init&gt;(String, String, String): void</td></tr></table></td></tr>
+</table>> shape=plain]
+	"me/Delocaz/HelperBot/HelpCommand" [label=<
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+    <tr><td>me/Delocaz/HelperBot/HelpCommand</td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">~ hb: HelperBot</td></tr></table></td></tr>
+    <tr><td><table align="left" border="0" cellborder="0" cellspacing="0"><tr><td align="left">+ &lt;init&gt;(String, String, String): void</td></tr><tr><td align="left">+ analyze(String, String, String): void</td></tr><tr><td align="left">+ readPage(String, String, String): List</td></tr><tr><td align="left">+ onCommand(String, String, String): boolean</td></tr></table></td></tr>
+</table>> shape=plain]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "org/bukkit/entity/Player" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand$Type" -> "java/lang/System" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand$Type" -> "me/Delocaz/HelperBot/HelpCommand$Type" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "org/bukkit/configuration/file/FileConfiguration" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/util/List" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "me/Delocaz/HelperBot/DelHelpCommand" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/io/IOException" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "me/Delocaz/HelperBot/ConfigFile" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/InputStream" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "me/Delocaz/HelperBot/ConfigFile" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "me/Delocaz/HelperBot/HelpCommand" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "me/Delocaz/HelperBot/ConfigFile$versions" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "me/Delocaz/HelperBot/AddHelpCommand" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/File" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "org/bukkit/command/CommandExecutor" [label=realization arrowhead=onormal style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "org/bukkit/command/CommandSender" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "org/bukkit/entity/Player" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "java/lang/StringBuilder" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand$Type" -> "me/Delocaz/HelperBot/HelpCommand" [label=composition arrowhead=diamond style=solid]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/io/FileWriter" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "org/bukkit/command/PluginCommand" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "java/lang/Enum" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "me/Delocaz/HelperBot/ConfigFile" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/util/Iterator" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "org/bukkit/plugin/java/JavaPlugin" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/lang/System" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "org/bukkit/ChatColor" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "org/bukkit/command/Command" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "me/Delocaz/HelperBot/HelperBot" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "org/bukkit/command/CommandExecutor" [label=realization arrowhead=onormal style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "me/Delocaz/HelperBot/HelperBot" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/io/File" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "me/Delocaz/HelperBot/HelpCommand$Type" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/lang/StringBuilder" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "me/Delocaz/HelperBot/ConfigFile$versions" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "me/Delocaz/HelperBot/AddHelpCommand" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "org/bukkit/ChatColor" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/net/URL" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/io/BufferedWriter" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/FileNotFoundException" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "java/lang/System" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "org/bukkit/entity/Player" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "org/bukkit/command/CommandSender" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "org/bukkit/configuration/file/FileConfiguration" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/util/ArrayList" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/IOException" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "java/lang/IllegalArgumentException" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand$Type" -> "java/lang/Enum" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "me/Delocaz/HelperBot/ConfigFile" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "java/lang/Exception" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "me/Delocaz/HelperBot/ConfigFile" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "me/Delocaz/HelperBot/HelperBot" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "me/Delocaz/HelperBot/HelperBot" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "org/bukkit/command/CommandExecutor" [label=realization arrowhead=onormal style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/FileReader" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/util/regex/Matcher" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "org/bukkit/command/Command" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/DelHelpCommand" -> "java/io/File" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "java/lang/StringBuilder" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "org/bukkit/command/CommandSender" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/BufferedReader" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand$Type" -> "java/lang/String" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "java/lang/NoSuchFieldError" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile" -> "org/bukkit/configuration/file/FileConfigurationOptions" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/io/InputStreamReader" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "java/util/regex/Pattern" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "me/Delocaz/HelperBot/HelperBot" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelperBot" -> "me/Delocaz/HelperBot/HelpCommand" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/HelpCommand" -> "org/bukkit/command/Command" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/AddHelpCommand" -> "org/bukkit/ChatColor" [label=uses arrowhead=vee style=dashed]
+	"me/Delocaz/HelperBot/ConfigFile$versions" -> "me/Delocaz/HelperBot/ConfigFile" [label=composition arrowhead=diamond style=solid]
 }
